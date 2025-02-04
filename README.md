@@ -110,11 +110,13 @@ Para instalar o yt-dlp no seu sistema:
 pip install yt-dlp
 ```
 📌 Contribuição
+```ruby
 Fork o repositório
 Crie um branch (git checkout -b feature-nova)
 Faça um commit (git commit -m 'Adiciona nova feature')
 Push no branch (git push origin feature-nova)
 Abra um Pull Request
+```
 📝 Licença
 Este projeto é de código aberto sob a licença MIT.
 
