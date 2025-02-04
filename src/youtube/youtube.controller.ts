@@ -5,8 +5,8 @@ import { YoutubeService } from './youtube.service';
 export class YoutubeController {
   constructor(private readonly youtubeService: YoutubeService) {}
 
-  @Post('convert')
-  async convert(@Body('url') url: string) {
-    return this.youtubeService.convertVideo(url);
+  @Post('convert-multiple')
+  async convertMultiple(@Body() body: { urls: { link: string; name: string }[]; folderName: string }) {
+    return this.youtubeService.convertVideos(body.urls, body.folderName);
   }
 }
